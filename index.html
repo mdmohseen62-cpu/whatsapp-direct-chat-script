@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Direct WhatsApp Chat Script</title>
+</head>
+<body>
+    <h2>WhatsApp Direct Message Generator</h2>
+    <script>
+        function openWhatsApp(countryCode, phoneNumber) {
+            // Clean the input to remove any spaces or special characters
+            const cleanNumber = phoneNumber.replace(/\D/g, '');
+            const finalUrl = `https://wa.me/${countryCode}${cleanNumber}`;
+            window.open(finalUrl, '_blank');
+        }
+        // Example usage: openWhatsApp('91', '9876543210');
+    </script>
+</body>
+</html>
